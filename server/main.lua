@@ -6,7 +6,7 @@ QBCore.Functions.CreateCallback('qb-fishing:GetItemData', function(source, cb, i
 	local retval = false
 	local Player = QBCore.Functions.GetPlayer(source)
 	if Player ~= nil then 
-		if Player.Functions.GetItemByName(itemName) > 0 then
+		if Player.Functions.GetItemByName(itemName) ~= nil then
 			retval = true
 		end
 	end
