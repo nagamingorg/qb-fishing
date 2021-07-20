@@ -97,7 +97,7 @@ CastBait = function(rodHandle, castLocation)
 
     if caughtFish then
         TriggerServerEvent("qb-fishing:receiveFish", castLocation, function(received) end)
-        TriggerServerEvent('qb-hud:Server:RelieveStress', 1)
+        TriggerServerEvent('hud:server:RelieveStress', 1)
     else
         QBCore.Functions.Notify("The fish got loose.", "error")
     end
