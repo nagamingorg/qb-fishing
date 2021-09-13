@@ -1,5 +1,4 @@
-
-cachedData = {}
+local cachedData = {}
 local JobBusy = false
 
 function CreateBlips()
